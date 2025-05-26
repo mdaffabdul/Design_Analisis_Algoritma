@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>  // untuk system("cls")
 using namespace std;
 
 class Node {
@@ -126,11 +125,13 @@ int main() {
                 break;
             case '2':
                 antrian.layaniAntrian();
+                cin.ignore();
                 antrian.pause();
                 system("cls");
                 break;
             case '3':
                 antrian.tampilkanAntrian();
+                cin.ignore();
                 antrian.pause();
                 system("cls");
                 break;
@@ -148,4 +149,3 @@ int main() {
 
     return 0;
 }
-
